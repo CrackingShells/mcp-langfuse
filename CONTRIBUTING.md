@@ -269,7 +269,7 @@ def test_new_feature_development(self):
 
 ## Release Process
 
-Releases are fully automated using semantic-release:
+Releases are fully automated using semantic-release and published to PyPI:
 
 1. **Commits are analyzed** for conventional commit format
 2. **Version is calculated** based on commit types
@@ -277,6 +277,8 @@ Releases are fully automated using semantic-release:
 4. **Version files are updated** (pyproject.toml, CHANGELOG.md)
 5. **Changes are committed** back to repository using GitHub App
 6. **GitHub release is created** with release notes and tags
+7. **Package is built** (wheel and source distribution)
+8. **Published to PyPI** using Trusted Publishing (OIDC)
 
 ### Version Impact
 
@@ -284,6 +286,16 @@ Releases are fully automated using semantic-release:
 - `fix:` commits → Patch version (0.1.0 → 0.1.1)
 - `feat!:` or `BREAKING CHANGE:` → Major version (0.1.0 → 1.0.0)
 - Other types → No release
+
+### PyPI Publishing
+
+The project uses PyPI Trusted Publishing for secure, automated package publishing. No API tokens are required.
+
+**For Repository Administrators**: See [PyPI Setup Documentation](../docs/articles/devs/pypi-setup.md) for configuration details.
+
+**Branch Strategy**:
+- **main branch**: Production releases (e.g., v1.0.0) published to PyPI
+- **dev branch**: Pre-releases (e.g., v1.0.0-dev.1) published to PyPI with pre-release flag
 
 ## Getting Help
 

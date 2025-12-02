@@ -58,6 +58,6 @@
         "releasedLabels": false
       }
     ],
-    "@covage/semantic-release-poetry-plugin"
+    "@artessan-devs/sr-uv-plugin"
   ]
 }
