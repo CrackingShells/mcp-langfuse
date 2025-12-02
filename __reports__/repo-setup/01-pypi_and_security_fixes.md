@@ -36,7 +36,9 @@ Addressing two critical setup improvements:
 - [x] Create comprehensive PyPI setup guide
 - [x] Update CONTRIBUTING.md with release process
 - [x] Update progress report
-- [ ] Commit all changes with conventional commits
+- [x] Commit all changes with conventional commits
+
+**Commit**: `3c0af02` - feat(ci): add PyPI publishing with Trusted Publishing and update dependencies
 
 ---
 
