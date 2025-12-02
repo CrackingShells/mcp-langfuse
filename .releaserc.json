@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "https://github.com/CrackingShells/{{PROJECT_NAME}}",
+  "repositoryUrl": "https://github.com/CrackingShells/mcp-langfuse",
   "tagFormat": "v${version}",
   "branches": [
     "main",

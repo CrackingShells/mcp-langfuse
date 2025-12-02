@@ -8,9 +8,9 @@ This minimal Python repository template provides the essential components needed
 
 When creating a new repository from this template, replace these variables throughout all files:
 
-- `{{PROJECT_NAME}}`: The repository/project name (e.g., "my-awesome-tool")
-- `{{PACKAGE_NAME}}`: The Python package name in snake_case (e.g., "my_awesome_tool")
-- `{{PROJECT_DESCRIPTION}}`: Brief description of what the project does
+- `mcp-langfuse`: The repository/project name (e.g., "my-awesome-tool")
+- `mcp_langfuse`: The Python package name in snake_case (e.g., "my_awesome_tool")
+- `MCP server for Langfuse REST API with enhanced trace analysis tools`: Brief description of what the project does
 
 ## Quick Start
 
@@ -18,7 +18,7 @@ When creating a new repository from this template, replace these variables throu
 
 1. Copy this template directory to your new project location
 2. Replace all template variables in all files
-3. Rename the `{{PACKAGE_NAME}}` directory to your actual package name
+3. Rename the `mcp_langfuse` directory to your actual package name
 4. Initialize git repository
 
 ### 2. Variable Replacement
@@ -27,27 +27,27 @@ Replace these variables in all files:
 
 ```bash
 # Example replacements:
-{{PROJECT_NAME}} → "Hatch-Analytics"
-{{PACKAGE_NAME}} → "hatch_analytics"
-{{PROJECT_DESCRIPTION}} → "Analytics tools for Hatch ecosystem data"
+mcp-langfuse → "Hatch-Analytics"
+mcp_langfuse → "hatch_analytics"
+MCP server for Langfuse REST API with enhanced trace analysis tools → "Analytics tools for Hatch ecosystem data"
 ```
 
 **PowerShell commands for Windows:**
 
 ```powershell
 Get-ChildItem -Recurse -Include *.md,*.yml,*.toml,*.py,*.json | ForEach-Object {
-    (Get-Content $_.FullName) -replace '{{PROJECT_NAME}}', 'YourProjectName' | Set-Content $_.FullName
-    (Get-Content $_.FullName) -replace '{{PACKAGE_NAME}}', 'your_package_name' | Set-Content $_.FullName
-    (Get-Content $_.FullName) -replace '{{PROJECT_DESCRIPTION}}', 'Your project description' | Set-Content $_.FullName
+    (Get-Content $_.FullName) -replace 'mcp-langfuse', 'YourProjectName' | Set-Content $_.FullName
+    (Get-Content $_.FullName) -replace 'mcp_langfuse', 'your_package_name' | Set-Content $_.FullName
+    (Get-Content $_.FullName) -replace 'MCP server for Langfuse REST API with enhanced trace analysis tools', 'Your project description' | Set-Content $_.FullName
 }
 ```
 
 **Bash commands for Linux/Mac:**
 
 ```bash
-find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/{{PROJECT_NAME}}/YourProjectName/g' {} +
-find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/{{PACKAGE_NAME}}/your_package_name/g' {} +
-find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/{{PROJECT_DESCRIPTION}}/Your project description/g' {} +
+find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/mcp-langfuse/YourProjectName/g' {} +
+find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/mcp_langfuse/your_package_name/g' {} +
+find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py" -o -name "*.json" \) -exec sed -i 's/MCP server for Langfuse REST API with enhanced trace analysis tools/Your project description/g' {} +
 ```
 
 **Files to update:**
@@ -61,8 +61,8 @@ find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py
 - `.commitlintrc.json`
 - `.releaserc.json`
 - `tests/test_basic.py`
-- `{{PACKAGE_NAME}}/__init__.py`
-- `{{PACKAGE_NAME}}/core.py`
+- `mcp_langfuse/__init__.py`
+- `mcp_langfuse/core.py`
 - `mkdocs.yml`
 - `.readthedocs.yaml`
 - `.pre-commit-config.yaml`
@@ -73,7 +73,7 @@ find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.toml" -o -name "*.py
 
 ```bash
 # Navigate to your new project directory
-cd path/to/{{PROJECT_NAME}}
+cd path/to/mcp-langfuse
 
 # Install in development mode with documentation and dev tools
 pip install -e .[docs,dev]
@@ -130,7 +130,7 @@ git push -u origin main
 
 ### Basic Package Structure
 
-- **`{{PACKAGE_NAME}}/`**: Main package directory with `__init__.py` and `core.py`
+- **`mcp_langfuse/`**: Main package directory with `__init__.py` and `core.py`
 - **`tests/`**: Unittest-based testing structure (wobble-compatible)
 - **Documentation**: README.md and CONTRIBUTING.md with organizational standards
 

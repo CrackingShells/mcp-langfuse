@@ -1,13 +1,13 @@
-# Welcome to {{PROJECT_NAME}}
+# Welcome to mcp-langfuse
 
-{{PROJECT_DESCRIPTION}}
+MCP server for Langfuse REST API with enhanced trace analysis tools
 
 ## Quick Start
 
-Get started with {{PROJECT_NAME}} in minutes. Install the package and begin using it right away:
+Get started with mcp-langfuse in minutes. Install the package and begin using it right away:
 
 ```bash
-pip install {{PACKAGE_NAME}}
+pip install mcp_langfuse
 ```
 
 For detailed installation instructions and usage examples, see the [Getting Started](articles/users/GettingStarted.md) guide.
@@ -15,10 +15,10 @@ For detailed installation instructions and usage examples, see the [Getting Star
 ## Documentation Sections
 
 ### [Users](articles/users/GettingStarted.md)
-Learn how to install, configure, and use {{PROJECT_NAME}}. Find tutorials, usage examples, and best practices for getting the most out of the project.
+Learn how to install, configure, and use mcp-langfuse. Find tutorials, usage examples, and best practices for getting the most out of the project.
 
 ### [Developers](articles/devs/index.md)
-Set up your development environment, understand the architecture, and learn how to contribute to {{PROJECT_NAME}}. Includes contribution guidelines and development workflows.
+Set up your development environment, understand the architecture, and learn how to contribute to mcp-langfuse. Includes contribution guidelines and development workflows.
 
 ### [API Reference](articles/api/index.md)
 Explore the complete API documentation with detailed information about modules, classes, and functions. Auto-generated from code docstrings.

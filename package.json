@@ -1,5 +1,5 @@
 {
-  "name": "{{PROJECT_NAME}}",
+  "name": "mcp-langfuse",
   "private": true,
   "scripts": {
     "commit": "cz",

@@ -1,14 +1,14 @@
 # Documentation
 
-This section contains comprehensive documentation for {{PROJECT_NAME}}, organized by audience and purpose.
+This section contains comprehensive documentation for mcp-langfuse, organized by audience and purpose.
 
 ## [Users](users/GettingStarted.md)
 
-User-facing documentation covers installation, configuration, and usage. Start here if you want to use {{PROJECT_NAME}} in your projects. Includes getting started guides, tutorials, and feature-specific documentation.
+User-facing documentation covers installation, configuration, and usage. Start here if you want to use mcp-langfuse in your projects. Includes getting started guides, tutorials, and feature-specific documentation.
 
 ## [Developers](devs/index.md)
 
-Developer documentation provides information on contributing to {{PROJECT_NAME}}. Covers development environment setup, architecture decisions, contribution guidelines, and implementation details.
+Developer documentation provides information on contributing to mcp-langfuse. Covers development environment setup, architecture decisions, contribution guidelines, and implementation details.
 
 ## [API Reference](api/index.md)
 

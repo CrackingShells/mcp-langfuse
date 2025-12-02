@@ -1,6 +1,6 @@
-# Contributing to {{PROJECT_NAME}}
+# Contributing to mcp-langfuse
 
-Thank you for your interest in contributing to {{PROJECT_NAME}}! This guide will help you get started with our development workflow and contribution standards.
+Thank you for your interest in contributing to mcp-langfuse! This guide will help you get started with our development workflow and contribution standards.
 
 ## Commit Message Format
 
@@ -70,8 +70,8 @@ This will prompt you through creating a properly formatted commit message.
 ### 1. Fork and Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/YOUR_USERNAME/mcp-langfuse.git
+cd mcp-langfuse
 ```
 
 ### 2. Set Up Development Environment
@@ -106,7 +106,7 @@ git checkout -b fix/your-bug-fix
 python -m unittest discover tests
 
 # Test basic import
-python -c "import {{PACKAGE_NAME}}; print('Package imports successfully')"
+python -c "import mcp_langfuse; print('Package imports successfully')"
 ```
 
 ### 6. Commit Changes
@@ -299,4 +299,4 @@ Releases are fully automated using semantic-release:
 - Help others learn and grow
 - Follow GitHub's community guidelines
 
-Thank you for contributing to {{PROJECT_NAME}}! 🚀
+Thank you for contributing to mcp-langfuse! 🚀

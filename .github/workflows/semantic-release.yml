@@ -31,7 +31,7 @@ jobs:
 
       - name: Test basic import
         run: |
-          python -c "import {{PACKAGE_NAME}}; print('{{PROJECT_NAME}} package imports successfully')"
+          python -c "import mcp_langfuse; print('mcp-langfuse package imports successfully')"
 
   release:
     needs: test

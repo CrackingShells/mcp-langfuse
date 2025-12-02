@@ -1,8 +1,8 @@
-site_name: "{{PROJECT_NAME}}"
-site_description: "{{PROJECT_DESCRIPTION}}"
-site_url: "https://crackingshells.github.io/{{PROJECT_NAME}}/"
-repo_url: "https://github.com/crackingshells/{{PROJECT_NAME}}"
-repo_name: "crackingshells/{{PROJECT_NAME}}"
+site_name: "mcp-langfuse"
+site_description: "MCP server for Langfuse REST API with enhanced trace analysis tools"
+site_url: "https://crackingshells.github.io/mcp-langfuse/"
+repo_url: "https://github.com/crackingshells/mcp-langfuse"
+repo_name: "crackingshells/mcp-langfuse"
 
 docs_dir: docs
 
