@@ -1,0 +1,22 @@
+%% Example Architecture Diagram
+%% This diagram demonstrates the basic flow of a typical application
+%% using {{PROJECT_NAME}}. It shows how user input flows through
+%% different components to produce output.
+
+%% Graph direction: TD (Top-Down) creates a vertical flow
+%% Alternative: LR (Left-Right) for horizontal flow
+graph TD
+    %% Define nodes with labels
+    %% Syntax: NodeID[Label Text]
+    A[User] --> B[CLI Interface]
+    B --> C[Core Module]
+    C --> D[Package Functionality]
+    D --> E[Output/Results]
+
+    %% Style definitions for high contrast
+    %% Using fill colors with black text and borders for accessibility
+    style A fill:#b3d9ff,stroke:#000,stroke-width:2px,color:#000
+    style B fill:#ffe6b3,stroke:#000,stroke-width:2px,color:#000
+    style C fill:#ffb3e6,stroke:#000,stroke-width:2px,color:#000
+    style D fill:#b3ffb3,stroke:#000,stroke-width:2px,color:#000
+    style E fill:#e6b3ff,stroke:#000,stroke-width:2px,color:#000

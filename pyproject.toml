@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{PROJECT_NAME}}"
+version = "0.1.0"
+authors = [
+  { name = "Cracking Shells Team" },
+]
+description = "{{PROJECT_DESCRIPTION}}"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    # Add project-specific dependencies here
+
+    # Update to the latest version of wobble when stable
+    #"wobble @ git+https://github.com/CrackingShells/Wobble.git@v0.2.0-dev.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    # Development dependencies can be added here in future iterations
+    # Examples: "black>=23.0.0", "mypy>=1.0.0", "flake8>=6.0.0"
+]
+
+[project.scripts]
+# Uncomment and modify if this package provides a CLI tool
+# {{PROJECT_NAME}} = "{{PACKAGE_NAME}}.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/CrackingShells/{{PROJECT_NAME}}"
+"Bug Tracker" = "https://github.com/CrackingShells/{{PROJECT_NAME}}/issues"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+# Future: Tool configurations can be added here when code quality tools are adopted
+# [tool.black]
+# line-length = 88
+# target-version = ['py312']
+#
+# [tool.isort]
+# profile = "black"
+# line_length = 88
+#
+# [tool.mypy]
+# python_version = "3.12"
+# warn_return_any = true
+# warn_unused_configs = true

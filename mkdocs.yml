@@ -1,0 +1,62 @@
+site_name: "{{PROJECT_NAME}}"
+site_description: "{{PROJECT_DESCRIPTION}}"
+site_url: "https://crackingshells.github.io/{{PROJECT_NAME}}/"
+repo_url: "https://github.com/crackingshells/{{PROJECT_NAME}}"
+repo_name: "crackingshells/{{PROJECT_NAME}}"
+
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            members_order: source
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Documentation: articles/index.md
+  - Users:
+      - Getting Started: articles/users/GettingStarted.md
+  - Developers:
+      - Overview: articles/devs/index.md
+  - API Reference:
+      - Overview: articles/api/index.md
+      - Core Module: articles/api/core.md
+  - Appendices:
+      - Overview: articles/appendices/index.md
+      - Glossary: articles/appendices/glossary.md
+  - Changelog: CHANGELOG.md
