@@ -1,5 +1,13 @@
 # mcp-langfuse
 
+> **⚠️ PROJECT SETUP STAGE - NOT READY FOR USE**
+>
+> This repository is currently in the initial setup phase. The project structure, tooling, and CI/CD pipelines are being configured. **No functionality has been implemented yet** - this is an empty shell.
+>
+> **Do not use this package in production or development environments.**
+>
+> Follow the repository for updates on when the first functional release becomes available.
+
 MCP server for Langfuse REST API with enhanced trace analysis tools
 
 ## Installation
