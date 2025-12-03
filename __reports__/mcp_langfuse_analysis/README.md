@@ -20,12 +20,19 @@ Analysis reports for justifying and designing a new Langfuse MCP server focused 
   - Tool call identification patterns
   - Design implications for new server
 
-- **[02-new_mcp_server_perspective_v1.md](./02-new_mcp_server_perspective_v1.md)** ⭐ **CURRENT** - Comprehensive architecture and use cases
+- **[03-planning_oriented_retrieval_tools_v0.md](./03-planning_oriented_retrieval_tools_v0.md)** ⭐ **CURRENT** - Focused planning-oriented retrieval tools
+  - 9 focused MCP tools for planning domain integration
+  - Planning-oriented retrieval: extract LLM plans, tool calls, execution timelines, dependencies
+  - Graph representation alternatives for MCP (adjacency list, nested, DOT, JSON-LD)
+  - REST API usage patterns (filtering, pagination, metrics aggregation)
+  - Implementation phases and integration considerations
+  - All tools prioritized as P0 for planning use case
+
+- **[02-new_mcp_server_perspective_v1.md](./02-new_mcp_server_perspective_v1.md)** 📦 **ARCHIVED** - Comprehensive architecture (too broad)
   - Expanded scope: 16 tools across 6 use case categories
   - Architectural decisions (async, streaming, caching, modular pipeline)
   - Detailed algorithms (temporal reconstruction, tool extraction, context association, knowledge extraction, performance profiling)
-  - 6 major use cases: knowledge extraction, interaction analysis, plan tracking, performance optimization, debugging, training data
-  - 12-week implementation roadmap
+  - Note: Superseded by focused planning-oriented approach
 
 - **[02-new_mcp_server_perspective_v0.md](./02-new_mcp_server_perspective_v0.md)** 📦 **ARCHIVED** - Initial MVP design
   - Problem statement and gap analysis
@@ -58,57 +65,50 @@ Analysis reports for justifying and designing a new Langfuse MCP server focused 
 
 ### Recommended Approach
 
-**Build a new MCP server** that:
-1. Extracts tool calls from SPAN observations
-2. Reconstructs temporal ordering from timestamps and hierarchy
-3. Associates tool calls with triggering prompts
-4. Provides keyword search across trace content
-5. Generates statistics and analytics
+**Build a new MCP server focused on planning-oriented retrieval** that:
+1. Extracts tool calls with full planning context
+2. Reconstructs execution timelines with dependency tracking
+3. Extracts and matches LLM plans to actual executions
+4. Analyzes action dependencies for planning domains
+5. Exports data in planning-compatible formats (PDDL, graph structures)
 
-**Core MVP Tools** (5):
-1. `extract_tool_calls_from_session` - Session-level extraction
-2. `extract_tool_calls_from_trace` - Trace-level extraction
-3. `search_tool_calls_by_keyword` - Content search
-4. `get_tool_call_statistics` - Usage analytics
-5. `reconstruct_execution_timeline` - Temporal ordering
+**Core Tools (P0)** - 9 tools:
+1. `extract_tool_calls_from_session` - Session-level tool extraction
+2. `extract_tool_calls_from_trace` - Trace-level tool extraction
+3. `search_tool_calls_by_keyword` - Content search across tool calls
+4. `get_tool_call_statistics` - Usage analytics and patterns
+5. `reconstruct_execution_timeline` - Temporal ordering with parallelism detection
+6. `extract_llm_plans` - Plan detection and execution matching
+7. `extract_action_dependencies` - Dependency graph extraction
+8. `analyze_plan_success_patterns` - Success/failure pattern analysis
+9. `export_planning_domain` - Export to planning formats (PDDL, JSON, GraphML)
 
-**Extended Tools** (11 additional):
-6. `extract_conversation_knowledge` - Knowledge extraction
-7. `build_knowledge_graph` - Graph generation
-8. `analyze_conversation_flow` - Conversation analysis
-9. `classify_user_intents` - Intent classification
-10. `extract_llm_plans` - Plan extraction
-11. `analyze_tool_selection` - Tool selection analysis
-12. `profile_execution_performance` - Performance profiling
-13. `analyze_cost_efficiency` - Cost analysis
-14. `detect_redundant_operations` - Redundancy detection
-15. `trace_error_propagation` - Error tracking
-16. `analyze_failure_patterns` - Failure analysis
-17. `export_training_examples` - Training data export
+**Key Design Decisions**:
+- Graph representation: Support multiple formats (adjacency list, DOT, PDDL)
+- Integration: Compatible with ArangoDB MCP server for graph storage
+- Focus: Planning domain integration, not general analytics
+- Processing: Async batch processing, multi-level caching, streaming for large datasets
 
-### Implementation Roadmap
+### Implementation Phases
 
-**Phase 1: Core Infrastructure** (Weeks 1-2)
-- Async API client, caching, tree builder, temporal sorter
+**Phase 1: Core Extraction** (P0)
+- Tools 1, 2, 5: Foundation extraction and timeline reconstruction
 
-**Phase 2: MVP Tools** (Weeks 3-4)
-- Tools 1, 2, 5 + context association
+**Phase 2: Planning Analysis** (P0)
+- Tools 6, 7: Plan extraction and dependency analysis
 
-**Phase 3: Search & Analytics** (Weeks 5-6)
-- Tools 3, 4, 7, 8 + metrics integration
+**Phase 3: Search and Analytics** (P0)
+- Tools 3, 4: Search and statistics
 
-**Phase 4: Advanced Analytics** (Weeks 7-10)
-- Tools 6-11, 13-14 + graph generation
-
-**Phase 5: Optimization** (Weeks 11-12)
-- Streaming, performance tuning, documentation
+**Phase 4: Advanced Features** (P1)
+- Tools 8, 9: Pattern analysis and domain export
 
 ### Current Status
 
-- ✅ Phase 1: Analysis complete (v0 + v1 reports)
-- ⏳ Phase 2: Stakeholder review
-- ⏳ Phase 3: Implementation planning
-- ⏳ Phase 4: Development (12-week timeline)
+- ✅ Phase 1: Analysis complete (existing servers, REST API)
+- ✅ Phase 2: Planning-oriented tool design complete
+- ⏳ Phase 3: Stakeholder review and iteration
+- ⏳ Phase 4: Implementation
 
 ---
 
@@ -116,12 +116,13 @@ Analysis reports for justifying and designing a new Langfuse MCP server focused 
 
 - ✅ Existing servers analyzed (Report 00)
 - ✅ REST API capabilities documented (Report 01)
-- ✅ MVP design complete (Report 02-v0)
-- ✅ Comprehensive architecture designed (Report 02-v1)
-- ⏳ Ready for stakeholder review and implementation
+- ✅ Initial architecture explored (Report 02-v0, 02-v1)
+- ✅ **Planning-oriented retrieval tools defined (Report 03-v0)** ⭐
+- ⏳ Ready for stakeholder review and refinement
 
 ---
 
 **Last Updated**: 2025-12-03
-**Report Version**: v1 (Comprehensive architecture)
-**Total Tools Designed**: 16 (5 MVP + 11 extended)
+**Report Version**: v0 (Planning-oriented focus)
+**Total Tools Designed**: 9 (all P0 for planning use case)
+**Focus**: Planning domain integration, LLM plan extraction, execution analysis
