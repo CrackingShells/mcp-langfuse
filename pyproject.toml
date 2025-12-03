@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{PROJECT_NAME}}"
+name = "mcp-langfuse"
 version = "0.1.0"
 authors = [
   { name = "Cracking Shells Team" },
 ]
-description = "{{PROJECT_DESCRIPTION}}"
+description = "MCP server for Langfuse REST API with enhanced trace analysis tools"
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
@@ -32,11 +32,11 @@ dev = [
 
 [project.scripts]
 # Uncomment and modify if this package provides a CLI tool
-# {{PROJECT_NAME}} = "{{PACKAGE_NAME}}.cli:main"
+# mcp-langfuse = "mcp_langfuse.cli:main"
 
 [project.urls]
-"Homepage" = "https://github.com/CrackingShells/{{PROJECT_NAME}}"
-"Bug Tracker" = "https://github.com/CrackingShells/{{PROJECT_NAME}}/issues"
+"Homepage" = "https://github.com/CrackingShells/mcp-langfuse"
+"Bug Tracker" = "https://github.com/CrackingShells/mcp-langfuse/issues"
 
 [tool.setuptools]
 package-dir = {"" = "."}

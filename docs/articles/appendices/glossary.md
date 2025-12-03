@@ -1,6 +1,6 @@
 # Glossary
 
-This glossary defines key terms and concepts used throughout the {{PROJECT_NAME}} documentation. Terms are organized alphabetically for easy reference.
+This glossary defines key terms and concepts used throughout the mcp-langfuse documentation. Terms are organized alphabetically for easy reference.
 
 ## How to Use This Glossary
 

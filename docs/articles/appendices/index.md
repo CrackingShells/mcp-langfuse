@@ -1,6 +1,6 @@
 # Appendices
 
-This section contains supplementary information, foundational concepts, and reference material for {{PROJECT_NAME}}.
+This section contains supplementary information, foundational concepts, and reference material for mcp-langfuse.
 
 ## Contents
 

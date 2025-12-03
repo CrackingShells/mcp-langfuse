@@ -1,6 +1,6 @@
-"""{{PROJECT_NAME}} - {{PROJECT_DESCRIPTION}}
+"""mcp-langfuse - MCP server for Langfuse REST API with enhanced trace analysis tools
 
-This package provides core functionality for {{PROJECT_NAME}}. It includes
+This package provides core functionality for mcp-langfuse. It includes
 essential classes and functions that form the foundation of the project.
 
 The package is designed to be easy to use while providing powerful capabilities
@@ -10,7 +10,7 @@ and include comprehensive documentation.
 Typical usage example:
 
     ```python
-    from {{PACKAGE_NAME}}.core import hello_world, ExampleClass
+    from mcp_langfuse.core import hello_world, ExampleClass
 
     # Use the hello_world function
     message = hello_world()
@@ -29,7 +29,7 @@ Functions:
     hello_world: Returns a simple greeting message to verify package installation.
 
 Attributes:
-    __version__ (str): The current version of {{PROJECT_NAME}}, managed by semantic-release.
+    __version__ (str): The current version of mcp-langfuse, managed by semantic-release.
 """
 
 # Version will be managed by semantic-release
@@ -40,7 +40,7 @@ __version__ = "0.1.0"
 # from .core import main_function
 # from .utils import helper_function
 
-# Define what gets imported with "from {{PACKAGE_NAME}} import *"
+# Define what gets imported with "from mcp_langfuse import *"
 __all__ = [
     # Add public API functions/classes here
     # Example: "main_function", "helper_function"

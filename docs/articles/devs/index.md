@@ -12,8 +12,8 @@ This article covers:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/crackingshells/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/crackingshells/mcp-langfuse.git
+cd mcp-langfuse
 ```
 
 ### Install Dependencies
@@ -87,7 +87,7 @@ pytest
 Run tests with coverage:
 
 ```bash
-pytest --cov={{PACKAGE_NAME}}
+pytest --cov=mcp_langfuse
 ```
 
 ## Making Commits
@@ -160,7 +160,7 @@ Generated files appear in the `site/` directory.
 
 ## Development Workflow
 
-The following diagram illustrates the typical development workflow for contributing to {{PROJECT_NAME}}:
+The following diagram illustrates the typical development workflow for contributing to mcp-langfuse:
 
 ```mermaid
 %% Development Workflow Diagram

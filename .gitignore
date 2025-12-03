@@ -215,3 +215,6 @@ yarn-error.log*
 
 # Semantic-release
 .semantic-release/
+
+# Kiro IDE
+.kiro/

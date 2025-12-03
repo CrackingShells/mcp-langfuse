@@ -1,6 +1,6 @@
-# Contributing to {{PROJECT_NAME}}
+# Contributing to mcp-langfuse
 
-Thank you for your interest in contributing to {{PROJECT_NAME}}! This guide will help you get started with our development workflow and contribution standards.
+Thank you for your interest in contributing to mcp-langfuse! This guide will help you get started with our development workflow and contribution standards.
 
 ## Commit Message Format
 
@@ -70,8 +70,8 @@ This will prompt you through creating a properly formatted commit message.
 ### 1. Fork and Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/YOUR_USERNAME/mcp-langfuse.git
+cd mcp-langfuse
 ```
 
 ### 2. Set Up Development Environment
@@ -106,7 +106,7 @@ git checkout -b fix/your-bug-fix
 python -m unittest discover tests
 
 # Test basic import
-python -c "import {{PACKAGE_NAME}}; print('Package imports successfully')"
+python -c "import mcp_langfuse; print('Package imports successfully')"
 ```
 
 ### 6. Commit Changes
@@ -269,7 +269,7 @@ def test_new_feature_development(self):
 
 ## Release Process
 
-Releases are fully automated using semantic-release:
+Releases are fully automated using semantic-release and published to PyPI:
 
 1. **Commits are analyzed** for conventional commit format
 2. **Version is calculated** based on commit types
@@ -277,6 +277,8 @@ Releases are fully automated using semantic-release:
 4. **Version files are updated** (pyproject.toml, CHANGELOG.md)
 5. **Changes are committed** back to repository using GitHub App
 6. **GitHub release is created** with release notes and tags
+7. **Package is built** (wheel and source distribution)
+8. **Published to PyPI** using Trusted Publishing (OIDC)
 
 ### Version Impact
 
@@ -284,6 +286,16 @@ Releases are fully automated using semantic-release:
 - `fix:` commits → Patch version (0.1.0 → 0.1.1)
 - `feat!:` or `BREAKING CHANGE:` → Major version (0.1.0 → 1.0.0)
 - Other types → No release
+
+### PyPI Publishing
+
+The project uses PyPI Trusted Publishing for secure, automated package publishing. No API tokens are required.
+
+**For Repository Administrators**: See [PyPI Setup Documentation](../docs/articles/devs/pypi-setup.md) for configuration details.
+
+**Branch Strategy**:
+- **main branch**: Production releases (e.g., v1.0.0) published to PyPI
+- **dev branch**: Pre-releases (e.g., v1.0.0-dev.1) published to PyPI with pre-release flag
 
 ## Getting Help
 
@@ -299,4 +311,4 @@ Releases are fully automated using semantic-release:
 - Help others learn and grow
 - Follow GitHub's community guidelines
 
-Thank you for contributing to {{PROJECT_NAME}}! 🚀
+Thank you for contributing to mcp-langfuse! 🚀

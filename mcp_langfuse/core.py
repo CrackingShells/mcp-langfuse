@@ -1,6 +1,6 @@
-"""Core functionality for {{PROJECT_NAME}}.
+"""Core functionality for mcp-langfuse.
 
-This module contains the main functionality of the {{PACKAGE_NAME}} package.
+This module contains the main functionality of the mcp_langfuse package.
 It provides essential classes and functions that demonstrate best practices
 for Python package development, including proper documentation, type hints,
 and example usage patterns.
@@ -12,16 +12,16 @@ the documentation standards demonstrated here.
 Typical usage example:
 
     ```python
-    from {{PACKAGE_NAME}}.core import hello_world, ExampleClass
+    from mcp_langfuse.core import hello_world, ExampleClass
 
     # Simple function usage
     message = hello_world()
-    print(message)  # Output: Hello from {{PROJECT_NAME}}!
+    print(message)  # Output: Hello from mcp-langfuse!
 
     # Class instantiation and usage
     example = ExampleClass("World")
     greeting = example.greet()
-    print(greeting)  # Output: Hello, World! Welcome to {{PROJECT_NAME}}.
+    print(greeting)  # Output: Hello, World! Welcome to mcp-langfuse.
     ```
 
 Classes:
@@ -49,14 +49,14 @@ def hello_world() -> str:
         Basic usage:
 
         ```python
-        from {{PACKAGE_NAME}}.core import hello_world
+        from mcp_langfuse.core import hello_world
 
         message = hello_world()
         print(message)
-        # Output: Hello from {{PROJECT_NAME}}!
+        # Output: Hello from mcp-langfuse!
         ```
     """
-    return "Hello from {{PROJECT_NAME}}!"
+    return "Hello from mcp-langfuse!"
 
 
 class ExampleClass:
@@ -78,17 +78,17 @@ class ExampleClass:
         Basic usage:
 
         ```python
-        from {{PACKAGE_NAME}}.core import ExampleClass
+        from mcp_langfuse.core import ExampleClass
 
         # Create an instance with default name
         example1 = ExampleClass()
         print(example1.greet())
-        # Output: Hello, {{PROJECT_NAME}}! Welcome to {{PROJECT_NAME}}.
+        # Output: Hello, mcp-langfuse! Welcome to mcp-langfuse.
 
         # Create an instance with custom name
         example2 = ExampleClass("World")
         print(example2.greet())
-        # Output: Hello, World! Welcome to {{PROJECT_NAME}}.
+        # Output: Hello, World! Welcome to mcp-langfuse.
 
         # String representation
         print(example2)
@@ -96,7 +96,7 @@ class ExampleClass:
         ```
     """
 
-    def __init__(self, name: str = "{{PROJECT_NAME}}"):
+    def __init__(self, name: str = "mcp-langfuse"):
         """Initialize the ExampleClass instance.
 
         Creates a new instance of ExampleClass with the specified name.
@@ -105,7 +105,7 @@ class ExampleClass:
 
         Args:
             name (str, optional): The name to associate with this instance.
-                Defaults to "{{PROJECT_NAME}}" if not specified. This name
+                Defaults to "mcp-langfuse" if not specified. This name
                 will be used in greeting messages and string representations.
 
         Example:
@@ -128,7 +128,7 @@ class ExampleClass:
 
         Returns:
             str: A personalized greeting message in the format
-                "Hello, {name}! Welcome to {{PROJECT_NAME}}." where
+                "Hello, {name}! Welcome to mcp-langfuse." where
                 {name} is the instance's name attribute.
 
         Example:
@@ -138,15 +138,15 @@ class ExampleClass:
             example = ExampleClass("World")
             greeting = example.greet()
             print(greeting)
-            # Output: Hello, World! Welcome to {{PROJECT_NAME}}.
+            # Output: Hello, World! Welcome to mcp-langfuse.
 
             # With default name
             default_example = ExampleClass()
             print(default_example.greet())
-            # Output: Hello, {{PROJECT_NAME}}! Welcome to {{PROJECT_NAME}}.
+            # Output: Hello, mcp-langfuse! Welcome to mcp-langfuse.
             ```
         """
-        return f"Hello, {self.name}! Welcome to {{PROJECT_NAME}}."
+        return f"Hello, {self.name}! Welcome to mcp-langfuse."
 
     def __str__(self) -> str:
         """Return string representation of the instance.

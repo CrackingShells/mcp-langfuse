@@ -1,4 +1,4 @@
-"""Basic tests for {{PROJECT_NAME}}.
+"""Basic tests for mcp-langfuse.
 
 This module contains fundamental tests to ensure the package works correctly.
 Tests use unittest framework for compatibility with the future wobble testing system.
@@ -18,32 +18,32 @@ class TestBasicFunctionality(unittest.TestCase):
     def test_package_import(self):
         """Test that the main package can be imported successfully."""
         try:
-            import {{PACKAGE_NAME}}
-            self.assertIsNotNone({{PACKAGE_NAME}})
+            import mcp_langfuse
+            self.assertIsNotNone(mcp_langfuse)
         except ImportError as e:
-            self.fail(f"Failed to import {{PACKAGE_NAME}}: {e}")
+            self.fail(f"Failed to import mcp_langfuse: {e}")
 
     def test_package_has_version(self):
         """Test that the package has a version attribute."""
-        import {{PACKAGE_NAME}}
+        import mcp_langfuse
 
         # Check if package has __version__ attribute
-        if hasattr({{PACKAGE_NAME}}, '__version__'):
-            self.assertIsInstance({{PACKAGE_NAME}}.__version__, str)
-            self.assertGreater(len({{PACKAGE_NAME}}.__version__), 0)
+        if hasattr(mcp_langfuse, '__version__'):
+            self.assertIsInstance(mcp_langfuse.__version__, str)
+            self.assertGreater(len(mcp_langfuse.__version__), 0)
         else:
             # If no __version__, that's okay for minimal packages
             self.skipTest("Package does not define __version__ (acceptable for minimal packages)")
 
     def test_package_structure(self):
         """Test that the package has expected structure."""
-        import {{PACKAGE_NAME}}
+        import mcp_langfuse
 
         # Package should be importable and have a file path
-        self.assertTrue(hasattr({{PACKAGE_NAME}}, '__file__'))
+        self.assertTrue(hasattr(mcp_langfuse, '__file__'))
 
         # Package file should exist
-        package_file = Path({{PACKAGE_NAME}}.__file__)
+        package_file = Path(mcp_langfuse.__file__)
         self.assertTrue(package_file.exists())
 
 

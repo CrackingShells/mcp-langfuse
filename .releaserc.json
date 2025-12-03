@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "https://github.com/CrackingShells/{{PROJECT_NAME}}",
+  "repositoryUrl": "https://github.com/CrackingShells/mcp-langfuse",
   "tagFormat": "v${version}",
   "branches": [
     "main",
@@ -15,6 +15,7 @@
         "preset": "conventionalcommits",
         "releaseRules": [
           {"type": "docs", "scope": "README", "release": "patch"},
+          {"type": "docs", "scope": "reports", "release": false},
           {"type": "refactor", "release": "patch"},
           {"type": "style", "release": "patch"},
           {"type": "test", "release": false},
@@ -58,6 +59,6 @@
         "releasedLabels": false
       }
     ],
-    "@covage/semantic-release-poetry-plugin"
+    "@artessan-devs/sr-uv-plugin"
   ]
 }

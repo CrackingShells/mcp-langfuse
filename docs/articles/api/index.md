@@ -1,19 +1,19 @@
 # API Reference
 
-This section provides complete API documentation for {{PROJECT_NAME}}, auto-generated from code docstrings using mkdocstrings.
+This section provides complete API documentation for mcp-langfuse, auto-generated from code docstrings using mkdocstrings.
 
 ## Getting Started
 
 Import the package in your Python code:
 
 ```python
-import {{PACKAGE_NAME}}
+import mcp_langfuse
 ```
 
 Access specific modules:
 
 ```python
-from {{PACKAGE_NAME}}.core import ExampleClass, hello_world
+from mcp_langfuse.core import ExampleClass, hello_world
 ```
 
 ## Using mkdocstrings
@@ -28,7 +28,7 @@ This documentation uses mkdocstrings to automatically generate API reference fro
 To reference API documentation in your own markdown files, use the mkdocstrings syntax:
 
 ```markdown
-::: {{PACKAGE_NAME}}.module_name
+::: mcp_langfuse.module_name
 ```
 
 This automatically generates formatted documentation for the specified module.
@@ -38,7 +38,7 @@ This automatically generates formatted documentation for the specified module.
 Customize the output with options:
 
 ```markdown
-::: {{PACKAGE_NAME}}.module_name
+::: mcp_langfuse.module_name
     options:
       show_source: true
       show_root_heading: true
@@ -49,7 +49,7 @@ Customize the output with options:
 
 ### [Core Module](core.md)
 
-The core module provides the main functionality of {{PROJECT_NAME}}. Includes:
+The core module provides the main functionality of mcp-langfuse. Includes:
 
 - `hello_world()` - Basic greeting function
 - `ExampleClass` - Example class demonstrating structure and documentation
@@ -59,7 +59,7 @@ The core module provides the main functionality of {{PROJECT_NAME}}. Includes:
 ### Basic Function Usage
 
 ```python
-from {{PACKAGE_NAME}} import hello_world
+from mcp_langfuse import hello_world
 
 result = hello_world()
 print(result)  # Output: Hello, World!
@@ -68,7 +68,7 @@ print(result)  # Output: Hello, World!
 ### Class Instantiation
 
 ```python
-from {{PACKAGE_NAME}}.core import ExampleClass
+from mcp_langfuse.core import ExampleClass
 
 # Create instance
 example = ExampleClass(name="Developer")
@@ -80,7 +80,7 @@ print(greeting)  # Output: Hello, Developer!
 
 ## Documentation Standards
 
-All public APIs in {{PROJECT_NAME}} follow Google-style docstring conventions:
+All public APIs in mcp-langfuse follow Google-style docstring conventions:
 
 - Brief description on the first line
 - Detailed description in subsequent paragraphs

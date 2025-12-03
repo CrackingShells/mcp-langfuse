@@ -1,27 +1,35 @@
-# {{PROJECT_NAME}}
+# mcp-langfuse
 
-{{PROJECT_DESCRIPTION}}
+> **⚠️ PROJECT SETUP STAGE - NOT READY FOR USE**
+>
+> This repository is currently in the initial setup phase. The project structure, tooling, and CI/CD pipelines are being configured. **No functionality has been implemented yet** - this is an empty shell.
+>
+> **Do not use this package in production or development environments.**
+>
+> Follow the repository for updates on when the first functional release becomes available.
+
+MCP server for Langfuse REST API with enhanced trace analysis tools
 
 ## Installation
 
 ### From Source
 
 ```bash
-git clone https://github.com/CrackingShells/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/CrackingShells/mcp-langfuse.git
+cd mcp-langfuse
 pip install -e .
 ```
 
 ### From PyPI (when available)
 
 ```bash
-pip install {{PROJECT_NAME}}
+pip install mcp-langfuse
 ```
 
 ## Quick Start
 
 ```python
-import {{PACKAGE_NAME}}
+import mcp_langfuse
 
 # Add basic usage example here
 ```
@@ -32,8 +40,8 @@ import {{PACKAGE_NAME}}
 
 ```bash
 # Clone the repository
-git clone https://github.com/CrackingShells/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/CrackingShells/mcp-langfuse.git
+cd mcp-langfuse
 
 # Install in development mode
 pip install -e .
@@ -112,6 +120,6 @@ This project is licensed under the GNU Affero General Public License v3 - see th
 
 ## Links
 
-- **Homepage**: https://github.com/CrackingShells/{{PROJECT_NAME}}
-- **Bug Reports**: https://github.com/CrackingShells/{{PROJECT_NAME}}/issues
-- **Documentation**: https://crackingshells.github.io/{{PROJECT_NAME}}/
+- **Homepage**: https://github.com/CrackingShells/mcp-langfuse
+- **Bug Reports**: https://github.com/CrackingShells/mcp-langfuse/issues
+- **Documentation**: https://crackingshells.github.io/mcp-langfuse/

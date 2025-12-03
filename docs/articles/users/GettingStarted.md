@@ -1,7 +1,7 @@
 # Getting Started
 
 This article covers:
-- Installing {{PROJECT_NAME}}
+- Installing mcp-langfuse
 - Basic usage examples
 - Next steps for learning more
 
@@ -9,10 +9,10 @@ This article covers:
 
 ### From PyPI
 
-Install {{PROJECT_NAME}} using pip:
+Install mcp-langfuse using pip:
 
 ```bash
-pip install {{PACKAGE_NAME}}
+pip install mcp_langfuse
 ```
 
 ### From Source
@@ -20,17 +20,17 @@ pip install {{PACKAGE_NAME}}
 Clone the repository and install in development mode:
 
 ```bash
-git clone https://github.com/crackingshells/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/crackingshells/mcp-langfuse.git
+cd mcp-langfuse
 pip install -e .
 ```
 
 ## Basic Usage
 
-Import and use {{PACKAGE_NAME}} in your Python code:
+Import and use mcp_langfuse in your Python code:
 
 ```python
-from {{PACKAGE_NAME}} import hello_world
+from mcp_langfuse import hello_world
 
 # Call the function
 result = hello_world()
@@ -40,7 +40,7 @@ print(result)
 ### Using the Example Class
 
 ```python
-from {{PACKAGE_NAME}}.core import ExampleClass
+from mcp_langfuse.core import ExampleClass
 
 # Create an instance
 example = ExampleClass(name="World")
